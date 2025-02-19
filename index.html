@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - Kamel & Dennise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://i.pinimg.com/736x/24/cb/16/24cb169667f4ebedc25a4fe10272621b.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(19, 18, 18);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        /* Animación de escritura */
+        .typing-container {
+            display: flex;
+            justify-content: center;
+        }
+        .typing {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e94560;
+            border-right: 4px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, blink 0.5s infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        video {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #e94560;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #ff7b9c;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="luna.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+    <div class="container">
+        <div class="typing-container">
+            <h1 class="typing">Nuestra Historia en Mobile Legends</h1>
+        </div>
+        <video src="febrero.mp4" autoplay loop controls></video>
+        <p>Para, Denisse</p>
+        <p>
+            Nuestra historia comenzó como una simple coincidencia en un juego, pero con el 
+            tiempo me di cuenta de que no era casualidad, sino el destino guiándonos el uno hacia 
+            el otro. Desde el primer día, tu presencia ha iluminado mis días, convirtiendo cada partida 
+            en un momento especial y cada conversación en un recuerdo inolvidable. 
+        </p>
+        <p>
+            No hay victoria más grande que haberte encontrado, ni derrota que duela cuando 
+            estás a mi lado. Cada sonrisa tuya es un tesoro, cada mensaje un motivo para seguir
+            adelante, y cada instante juntos es una prueba de que lo mejor de mi vida es compartirla 
+            contigo.  
+        </p>
+        <p>
+            No sé qué nos depare el futuro, pero lo que sí sé es que quiero seguir recorriéndolo 
+            contigo. Porque sin importar cuántas partidas juguemos o cuántos retos enfrentemos, 
+            lo único que realmente importa es que tú estés ahí, a mi lado.  
+        </p>
+        <p>
+            Desde entonces, jugamos juntos todos los días. Gane o pierda, siempre me hace feliz.  
+            Y aunque a veces es un poquito enojoncita, me encanta, porque es parte de lo que la hace única.✨💖  
+        </p>
+        <p>Con todo mi cariño, Kamel</p>
+        <div class="buttons">
+            <button class="btn" onclick="alert('Denisse, te quiero más de lo que las palabras pueden expresar. Eres y siempre serás mi mejor elección.💖')">Mensaje Especial</button>
+            <button class="btn" onclick="toggleAudio()">🎶 Reproducir Música</button>
+        </div>
+    </div>
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById('background-audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
